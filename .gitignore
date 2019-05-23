@@ -1,6 +1,8 @@
-tmp/*
-!tmp/.gitkeep
+.data/tmp/*
+!.data/tmp/.gitkeep
 input/*
 !input/.gitkeep
 graphs/*
 !graphs/.gitkeep
+done/*
+!done/.gitkeep
