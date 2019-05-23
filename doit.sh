@@ -81,7 +81,7 @@ exit 1
 
 export -f graphfile
 
-find $inputdir -type f -iname "*.txt" -exec sh -c '
+find $inputdir -type f -iname "*.txt" -exec bash -c '
 for file do
     rm -rfv $tmpdir/*
     cp "$file" $tmpfile
