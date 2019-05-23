@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export tmpdir=tmp
+export tmpdir=.data/tmp
 export tmpfile=$tmpdir/prepared
 export inputdir=input
 export outputdir=graphs
@@ -87,6 +87,7 @@ for file do
     cp "$file" $tmpfile
     graphfile
     mv $outputdir/done.png "$outputdir/`basename "${file%.*}"`.png"
+    mv "$file" "done/`basename "${file}"`"
     done
 ' sh {} +
 
