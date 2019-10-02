@@ -57,7 +57,7 @@ function graphfile {
 	gnuplot -e "datafile='$tmpfile';blocksize='$blocklines'" $plottemplate
 	echo "Gnuplot done, Making  png"
 	montage $tmpdir/*.png -tile 12x8 -frame 2 -shadow -geometry '800x600+2+2>' $outputdir"/done.png"
-	rm -rf $tmpdir/*
+#	mb -rf $tmpdir/*
 	echo "png done"
 }
 
